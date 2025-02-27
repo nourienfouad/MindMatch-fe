@@ -82,7 +82,9 @@ export function ChatContent({
         return;
       }
 
-      const socket = new WebSocket(`ws://localhost:8000/ws?token=${token}`);
+      const socket = new WebSocket(
+        `${process.env.WEB_SOCKET_API}/ws?token=${token}`
+      );
       socketRef.current = socket;
 
       socket.onopen = () => {
