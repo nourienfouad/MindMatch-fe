@@ -83,7 +83,7 @@ export function ChatContent({
       }
 
       const socket = new WebSocket(
-        `${process.env.WEB_SOCKET_API}/ws?token=${token}`
+        `${process.env.NEXT_PUBLIC_WEB_SOCKET_API}/ws?token=${token}`
       );
       socketRef.current = socket;
 
