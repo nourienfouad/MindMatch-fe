@@ -52,7 +52,7 @@ export const Navbar = ({
         <div className="flex items-center gap-2">
           <div className="size-8 rounded-full bg-muted animate-pulse border shadow-sm" />
           <div className="flex items-center gap-2">
-            <span className="font-medium">TheraChat</span>
+            <span className="font-medium">MindMatch</span>
             <span className="relative flex size-3">
               <span
                 className={cn(
